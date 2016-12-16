@@ -1,0 +1,68 @@
+﻿<div class="row">
+    <div class="col-md-4">
+
+
+        <uib-accordion close-others="true">
+            <div uib-accordion-group class="panel-default" heading="NASDE Tour Events">
+                <div>
+                    <ul class="nodot">
+                        <li ng-repeat="nasdeEvent in controller.events | filter:{category:'nasde'}">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <a role="button" ng-click="controller.show(nasdeEvent, nasdeEvent.id)">{{nasdeEvent.name}}</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div uib-accordion-group class="panel-default" heading="US Events">
+                <div>
+                    <ul class="nodot">
+                        <li ng-repeat="usEvent in controller.events | filter:{category:'us'}">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <a role="button" ng-click="controller.show(usEvent, usEvent.id)">{{usEvent.name}}</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div uib-accordion-group class="panel-default" heading="Global Events">
+                <div>
+                    <ul class="nodot">
+                        <li ng-repeat="gEvent in controller.events | filter:{category:'global'}">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <a role="button" ng-click="controller.show(gEvent, gEvent.id)">{{gEvent.name}}</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </uib-accordion>
+
+    </div>
+
+    <div class="col-md-8">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h2>{{controller.event.name}}</h2></div>
+            <div class="panel-body">
+                {{controller.event.city}}
+                {{controller.event.state}}<br />
+                <a href="{{controller.event.url}}">{{controller.event.name}}</a><br />
+                <div>
+                    <ul class="nodot">
+                        <li ng-repeat="photographer in controller.users">
+                            {{photographer.firstName}} {{photographer.lastName}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

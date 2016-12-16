@@ -1,0 +1,158 @@
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="ProjectB">
+<head>
+    <title>ProjectB</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/css/index.css" rel="stylesheet" />
+    <link href="~/css/about.css" rel="stylesheet" />
+    <link href="~/css/Sidebar-Menu.css" rel="stylesheet" />
+    <base href="/" />
+
+</head>
+<body ng-controller="AccountController as account">
+    <div id="index">
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand navbar-link" href="/"><img src="~/images/Project B.png" id="logo"></a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown" id="userDropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Dance <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/rere" role="button">Project Re-Re</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="userDropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Art <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" role="button"></a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="userDropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Travel <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" role="button"></a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="userDropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Culinary <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" role="button"></a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="userDropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Work <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/learning" role="button">Learning to Code</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="/dpc" role="button">Dance Photo Connection</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="presentation"><a href="/about">About </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--View Container-->
+        <div class="container">
+
+            <div class="col-md-12">
+                <ui-view></ui-view>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="index">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 footer-navigation">
+                        <h3><a href="#">Project B</a></h3>
+                        <p class="links">
+                            <a href="#">Dance </a><strong> - </strong>
+                            <a href="#">Art </a><strong> - </strong>
+                            <a href="#">Travel </a><strong> - </strong>
+                            <a href="#">Culinary </a><strong> - </strong>
+                            <a href="#">Work </a><strong> - </strong>
+                            <a href="#">About</a><strong> </strong>
+                        </p>
+                        <p class="company-name">Project B &copy; 2016 </p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 footer-contacts">
+                        <div>
+                            <span class="fa fa-map-marker footer-contacts-icon"> </span>
+                            <p>All Around the World</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-phone footer-contacts-icon"></i>
+                            <p class="footer-center-info email text-left"> +1 678 463 9503</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope footer-contacts-icon"></i>
+                            <p> <a href="#" target="_blank">beason.reginald@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-4 footer-about">
+                        <h4>About the company</h4>
+                        <p>This is a website, about my life and my ambititons. Dancing, Travel, and Work. All of them are Projects that I take time to learn and get better at. </p>
+                        <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Library Files -->
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/lib/angular/angular.js"></script>
+    <script src="~/lib/angular-resource/angular-resource.js"></script>
+    <script src="~/lib/angular-animate/angular-animate.js"></script>
+    <script src="~/lib/angular-touch/angular-touch.js"></script>
+    <script src="~/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="~/lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="~/lib/jquery-mb-ytplayer/jquery.mb.YTPlayer.min.js"></script>
+    <script src="~/lib/Sidebar-Menu.js"></script>
+
+    <!-- App Files-->
+    <script src="~/ngapp/app.js"></script>
+
+    <!--Controller Files-->
+    <script src="~/ngapp/controllers/homeController.js"></script>
+    <script src="~/ngApp/controllers/dpc/dpc.js"></script>
+    <!--Service Files-->
+    <script src="~/ngapp/services/services.js"></script>
+
+    <!-- Security -->
+    <script src="~/ngapp/controllers/accountcontroller.js"></script>
+    <script src="~/ngapp/services/accountservice.js"></script>
+
+</body>
+</html>
