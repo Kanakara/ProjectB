@@ -9,14 +9,14 @@ namespace ProjectB {
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: '/ngApp/views/home.html',
+                templateUrl: '/ngApp/views/blog.html',
                 controller: ProjectB.Controllers.HomeController,
                 controllerAs: 'controller'
             })
             .state('dpc', {
                 url: '/dpc',
                 templateUrl: '/ngApp/views/dpc.html',
-                controller: ProjectB.Controllers.DPCController,
+                controller: ProjectB.Controllers.EventController,
                 controllerAs: 'controller'
             })
             .state('rere', {
@@ -64,6 +64,12 @@ namespace ProjectB {
             .state('blog', {
                 url: '/blog',
                 templateUrl: '/ngApp/views/blog.html',
+                controller: ProjectB.Controllers.BlogController,
+                controllerAs: 'controller'
+            })
+            .state('blogcreate', {
+                url: '/blogcreate',
+                templateUrl: '/ngApp/views/blogcreate.html',
                 controller: ProjectB.Controllers.BlogController,
                 controllerAs: 'controller'
             })

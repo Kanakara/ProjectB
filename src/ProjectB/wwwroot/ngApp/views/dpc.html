@@ -6,7 +6,7 @@
             <div uib-accordion-group class="panel-default" heading="NASDE Tour Events">
                 <div>
                     <ul class="nodot">
-                        <li ng-repeat="nasdeEvent in controller.events | filter:{category:'nasde'}">
+                        <li ng-repeat="nasdeEvent in controller.event | filter:{category:'nasde'}">
                             <div class="row">
                                 <div class="col-md-7">
                                     <a role="button" ng-click="controller.show(nasdeEvent, nasdeEvent.id)">{{nasdeEvent.name}}</a>
@@ -20,7 +20,7 @@
             <div uib-accordion-group class="panel-default" heading="US Events">
                 <div>
                     <ul class="nodot">
-                        <li ng-repeat="usEvent in controller.events | filter:{category:'us'}">
+                        <li ng-repeat="usEvent in controller.event | filter:{category:'us'}">
                             <div class="row">
                                 <div class="col-md-7">
                                     <a role="button" ng-click="controller.show(usEvent, usEvent.id)">{{usEvent.name}}</a>
@@ -34,7 +34,7 @@
             <div uib-accordion-group class="panel-default" heading="Global Events">
                 <div>
                     <ul class="nodot">
-                        <li ng-repeat="gEvent in controller.events | filter:{category:'global'}">
+                        <li ng-repeat="gEvent in controller.event | filter:{category:'global'}">
                             <div class="row">
                                 <div class="col-md-7">
                                     <a role="button" ng-click="controller.show(gEvent, gEvent.id)">{{gEvent.name}}</a>

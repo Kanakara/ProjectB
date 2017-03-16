@@ -122,5 +122,15 @@
   margin-bottom:5px;
 }
 
+
 /*Home Page*/
 
+.nodot {
+    list-style: none;
+    padding-top: 5px;
+}
+
+.nodot li {
+    list-style: none;
+    padding-top: 5px;
+}

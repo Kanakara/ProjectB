@@ -1,0 +1,42 @@
+﻿/*Blog html Page*/
+#blog div {
+    border:1px solid black;
+}
+
+.featContent img {
+
+    height: 352px;
+    width: 100%;
+}
+
+.feat2-3 img {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 128px;
+    width: 100%;
+}
+
+.recentPost img {
+    height: 160px;
+    width: 240px;
+}
+
+.popPost img {
+    height: 48px;
+    width: 64px;
+}
+
+.sidenavtitles {
+
+    background-color: black;
+    color:aliceblue;
+
+}
+
+/*Blog Create html*/
+
+#blogcreate textarea {
+    width: 100%;
+    height: 100%;
+}
+
